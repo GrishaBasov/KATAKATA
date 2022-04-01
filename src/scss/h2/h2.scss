@@ -1,0 +1,17 @@
+.h2 {
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 56px;
+  background: linear-gradient( 270deg, #FFFFFF 0%, #F8F8F8 98.61%);
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    padding-left: 16px;
+    color: #7E7E82;
+    font-weight: 200;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,36 @@
+.header__btn {
+  width:40px;
+  height:40px;
+  background: none no-repeat;
+  border:none;
+  cursor:pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  &-burger {
+    background-image: url("../img/button/burger.svg") ;
+  }
+
+  &-chat {
+    background-image: url("../img/button/chat.svg") ;
+  }
+  &-profile {
+    background-image: url("../img/button/profile.svg") ;
+  }
+  &-repair {
+    background-image: url("../img/button/repair.svg") ;
+  }
+  &-checkstatus {
+    background-image: url("../img/button/checkstatus.svg") ;
+  }
+
+  &-call {
+    background-image: url("../img/button/call.svg");
+  }
+
+}
+
+
+

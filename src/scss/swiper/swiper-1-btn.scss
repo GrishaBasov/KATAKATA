@@ -1,0 +1,105 @@
+.btn-forward {
+  background-image: url("../img/button/go.svg");
+  background-color:white;
+  background-repeat: no-repeat;
+  border:none;
+  width:40px;
+  height:40px;
+  cursor: pointer;
+  margin-right: 16px;
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0 0 0.75rem crimson;
+    transition-duration: 0.6s;
+  }
+
+}
+
+
+
+.btn-lenovo::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/lenovo.png");
+  width:108px;
+  height:32px;
+  left:16px;
+  bottom:16px;
+}
+
+.btn-sumsung::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/sumsung.png");
+  width:116px;
+  height:39px;
+  left:16px;
+  bottom:16px;
+}
+
+.btn-apple::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/apple.png");
+  background-repeat: no-repeat;
+  width:44px;
+  height:44px;
+  left:16px;
+  bottom:16px;
+}
+
+.btn-view-sonic::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/view_sonic.png");
+  background-repeat: no-repeat;
+  width:128px;
+  height:21px;
+  left:16px;
+  bottom:25px;
+}
+.btn-bosch::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/bosch.png");
+  background-repeat: no-repeat;
+  width:128px;
+  height:29px;
+  left:16px;
+  bottom:20px;
+}
+
+.btn-hp::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/hp.png");
+  background-repeat: no-repeat;
+  width:52px;
+  height:52px;
+  left:16px;
+  bottom:10px;
+}
+
+.btn-acer::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/acer.png");
+  background-repeat: no-repeat;
+  width:94px;
+  height:24px;
+  left:16px;
+  bottom:24px;
+}
+
+.btn-sony::after {
+  position: absolute;
+  content: '';
+  background-image: url("../img/img-brand-logo/sony.png");
+  background-repeat: no-repeat;
+  width:128px;
+  height:26px;
+  left:16px;
+  bottom:20px;
+}
+

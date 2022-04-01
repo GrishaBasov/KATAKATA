@@ -1,0 +1,101 @@
+@import "./variables.scss";
+@import "./header/header.scss";
+@import "./button/button.scss";
+@import "./h1/h1.scss";
+@import "../fonts/fonts.css";
+@import "./menu-services/menu-services.scss";
+@import "./main-info/main-info.scss";
+@import "./h2/h2.scss";
+@import "./swiper/swiper-1";
+@import 'swiper/swiper-1-btn';
+@import "./h3/h3";
+@import './swiper-2/swiper-2.scss';
+@import './swiper-2/swiper-2-buttons.scss';
+@import './h4/h4.scss';
+@import './swiper-3/swiper-3.scss';
+@import './swiper-3/swiper-3-button.scss';
+@import './price-info/price-info.scss';
+@import './footer/footer';
+@import './menu-burger/menu-burger.scss';
+@import "./blur/blur";
+@import "./button-read-hide/button-read-hide";
+@import "./price-for-service/price-for-service.scss";
+@import "./header-2/header-2.scss";
+@import "./modal-1/modal-1.scss";
+@import "./modal-2/modal-2.scss";
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+body {
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+.page {
+  max-width:1120px;
+  background-color: $bgHeaderColor;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width:1440px) {
+    position: absolute;
+    z-index: 1;
+    right:0;
+  }
+
+}
+
+.display-none {
+  display: none;
+}
+
+.burger-none {
+  display: none;
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+
+}
+
+.overflow-hidden {
+  max-height:100vh;
+  overflow: hidden;
+}
+
+
+.burger-in-place {
+  transform: translateX(0);
+  transition-duration: 0.5s;
+}
+
+.burger-hide {
+  transform: translateX(-1000px);
+  transition-duration: 0.9s;
+
+  @media (min-width: 1440px) {
+    transform: translateX(0);
+    transition-duration: 0s;
+  }
+}
+
+.modal-in-place {
+  transform: translateX(0);
+  transition-duration: 0.5s;
+}
+
+.modal-hide {
+  transform: translateX(1000px);
+  transition-duration: 0.9s;
+}

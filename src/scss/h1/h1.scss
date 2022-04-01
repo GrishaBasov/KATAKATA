@@ -1,0 +1,24 @@
+h1 {
+  position: relative;
+  margin:0;
+  height:70px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-family: "TT Lakes", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
+  background-color: $mainBackground;
+}
+
+h1::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 40px;
+  background-color: $h1Divider;
+  left:0;
+  border-radius: 0 5px 5px 0;
+  vertical-align: center;
+}

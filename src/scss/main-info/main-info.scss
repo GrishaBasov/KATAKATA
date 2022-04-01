@@ -1,0 +1,116 @@
+.main-info {
+  background-color: $mainBackground;
+  margin:0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $borderBottom;
+  padding-top: 20px;
+
+  p {
+    margin-left: 16px;
+    margin-right: 20px;
+    margin-top: 0;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .hide-p {
+    display: none;
+  }
+
+  .hide-remove {
+    display: none;
+  }
+
+  .read-more {
+    position: relative;
+    background: none;
+    border: none;
+    font-family: TT Lakes, serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(105%);
+      transition-duration: 0.1s;
+    }
+  }
+
+  .hide {
+    position: relative;
+    background: none;
+    border: none;
+    font-family: TT Lakes, serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 40px;
+    &:hover {
+      transform: scale(105%);
+      transition-duration: 0.1s;
+    }
+  }
+
+  .read-more::before {
+    content:"";
+    position: absolute;
+    height:30px;
+    width:30px;
+    background-image: url("../img/main-info/expand.svg");
+    left:-20px;
+    margin-top: -2px;
+  }
+
+  .hide::before {
+    content:"";
+    position: absolute;
+    height:30px;
+    width:30px;
+    background-image: url("../img/main-info/expand.svg");
+    left:-25px;
+    top:-6px;
+    transform: rotate(180deg);
+  }
+
+  .hide-button {
+    display: none;
+  }
+
+  .img-320 {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .img-768 {
+    display:none;
+  }
+
+  .img-1120 {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+
+    display:flex;
+    justify-content: space-evenly;
+
+    .img-320, .img-1120 {
+      display:none;
+    }
+
+    .img-768 {
+      display: block;
+      margin-left: 20px;
+      border-radius: 5px;
+      margin-right: 16px;
+    }
+
+    .main-info__article {
+      display: block;
+      min-width:340px;
+    }
+  }
+}
+
+

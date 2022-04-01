@@ -1,0 +1,74 @@
+
+.header {
+  height:88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &__header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-burger {
+    margin: 0 16px 0 16px;
+  }
+
+  &__header-right {
+    display:flex;
+    align-items: center;
+  }
+
+  &__btn-call, &__btn-chat, &__btn-profile {
+    display:none;
+  }
+
+  &__btn-checkstatus, &__btn-repair {
+    margin: 0 16px 0 0;
+  }
+
+  &::before {
+    position: absolute;
+    content:'';
+    width:2px;
+    height:32px;
+    background-color: $divider;
+    right:132px;
+  }
+
+  @media (min-width:768px) {
+    &__btn-call, &__btn-chat {
+      display: initial;
+      margin-right: 16px;
+    }
+
+    &__btn-profile {
+      display: initial;
+      margin-right: 42px;
+    }
+
+    &__btn-burger {
+      margin-left:24px;
+      margin-right:42px;
+    }
+
+    &::after {
+      position: absolute;
+      content:'';
+      width:2px;
+      height:32px;
+      background-color: $divider;
+      left:84px;
+    }
+
+
+  }
+
+}
+
+.header:not(.header__btn-repair), .header:not(.header__btn-checkstatus) {
+  @media (min-width:1440px) {
+    display: none;
+  }
+}

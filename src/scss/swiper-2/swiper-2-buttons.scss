@@ -1,0 +1,54 @@
+.btn-go {
+  display: block;
+  background-image: url("../img/button/go.svg");
+  background-color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transform: translateY(45px) translateX(-15px);
+  border-radius: 50%;
+  &:hover {
+    box-shadow: 0 0 0.75rem crimson;
+    transition-duration: 0.6s;
+  }
+}
+
+.btn-go::after {
+  position: absolute;
+  white-space: nowrap;
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  top:-90px;
+  left:-150px;
+}
+
+.swiper-slide:nth-child(1) > .btn-go::after {
+  content: 'Ремонт ноутбуков';
+}
+.swiper-slide:nth-child(2) > .btn-go::after {
+  content: 'Ремонт телефонов';
+}
+.swiper-slide:nth-child(3) > .btn-go::after {
+  content: 'Ремонт планшетов';
+}
+.swiper-slide:nth-child(4) > .btn-go::after {
+  content: 'Ремонт колонок';
+}
+.swiper-slide:nth-child(5) > .btn-go::after {
+  content: 'Ремонт наушников';
+}
+.swiper-slide:nth-child(6) > .btn-go::after {
+  content: 'Ремонт мониторов';
+}
+.swiper-slide:nth-child(7) > .btn-go::after {
+  content: 'Ремонт мышек';
+}
+.swiper-slide:nth-child(8) > .btn-go::after {
+  content: 'Ремонт роутеров';
+}
+.swiper-slide:nth-child(9) > .btn-go::after {
+  content: 'Ремонт принтеров';
+}
